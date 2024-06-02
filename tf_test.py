@@ -5,7 +5,7 @@ import tensorflow as tf
 import time
 
 # Create a random tensor
-a = tf.random.normal([10000, 10000])
+a = tf.random.normal([33000, 33000])
 
 # Function to measure time for matrix multiplication
 def measure_time(device):

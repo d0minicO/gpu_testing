@@ -15,7 +15,7 @@ torch.set_num_threads(num_threads)
 print(f"Using {num_threads} CPU threads")
 
 # Create a random tensor
-a = torch.randn(10000, 10000)
+a = torch.randn(33000, 33000)
 
 # Function to measure time for matrix multiplication
 def measure_time(device):
