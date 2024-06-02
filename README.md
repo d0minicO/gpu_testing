@@ -1,8 +1,6 @@
-# gpu_testing
-Testing performance of new GPU
+# Set up and testing of new GPU
 
-Repo for setting up my new laptop with an NVIDIA GPU and testing how good it is.
-
+Repo for setting up my new laptop with an NVIDIA GPU and testing how good it is at matrix multiplication.  
 
 ## Install tools
 
@@ -11,6 +9,15 @@ In powershell, First install wsl and set to wsl2
 ```
 wsl --install
 wsl --set-default-version 2
+```
+
+Create a text file called /.wslconfig and modify it to allow max resource use
+```
+nano /mnt/c/Users/imnot/.wslconfig
+# Add all this to the text file
+[wsl2]
+memory=32GB   # Limits VM memory to this man GB
+processors=20  # Makes the WSL2 VM use this many virtual processors
 ```
 
 In wsl, install python
